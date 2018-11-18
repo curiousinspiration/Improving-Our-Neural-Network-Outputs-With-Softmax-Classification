@@ -84,7 +84,7 @@ TTensorPtr CrossEntropyLoss::Backward(
         }
     }
 
-    return make_shared<Tensor>(*l_gradient /= (float) a_inputs->Shape().at(0));
+    return make_shared<Tensor>(*l_gradient /= (float) a_origInputs->Shape().at(0));
 }
 
 } // namespace neural
