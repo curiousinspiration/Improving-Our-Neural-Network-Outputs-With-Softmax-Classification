@@ -84,8 +84,8 @@ int main(int argc, char const *argv[])
     // Non-linear activation
     ReLULayer activationLayer;
     
-    // second linear layer is 300x1
-    // 300 hidden units, 1 output
+    // second linear layer is 300x10
+    // 300 hidden units, 10 outputs
     LinearLayer secondLinearLayer(Tensor::Random({300, 10}, -0.01f, 0.01f));
 
     // Convert outputs to probabilities
